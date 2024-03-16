@@ -1,7 +1,7 @@
 {
     "indent": 4,
-    "num_rows": [2, 3],
-    "num_cols": [2, 3, 4],
+    "num_rows": [2, 3, 4],
+    "num_cols": [2],
     "justify-content": [
         "start",
         "center",
@@ -15,6 +15,12 @@
         "center",
         "end",
         "stretch"
+    ],
+    "text-align": [
+        "start",
+        "center",
+        "end",
+        "justify"
     ],
     "font-family": [
         "Arial, sans-serif",
@@ -177,15 +183,33 @@
         "YellowGreen"
     ],
     "padding": [
-        "0",
+        "0.2em",
         "0.5em",
         "1em",
-        "2em",
-        "3em"
+        "2em"
+    ],
+    "padding-lr": [
+        "0.2em",
+        "0.5em",
+        "1em",
+        "2em"
+    ],
+    "padding-tb": [
+        "0.2em",
+        "0.5em"
+    ],
+    "button-padding": [
+        "0.5em",
+        "1em",
+        "2em"
+    ],
+    "border-width": [
+        "0",
+        "thin"
     ],
     "border-radius": [
-        "5",
-        "10",
-        "30"
+        "5px",
+        "10px",
+        "25px"
     ]
 }

@@ -1,27 +1,9 @@
 # hbdl-generator
 A synthetic image-to-html dataset generator.
 
-## Main variables
-- **html**: HTML code
-- **css**: dictionary containing all css classes
-- **left_pad**: current left padding
-
-## Possible page structures
-- Single large column
-- Small left, large right column
-- Large left, small right column
-
-## Page CSS
-A page has some CSS that is applied to all of it. It should affect:
-- Font (not to be included in the initial draft)
-- Text color
-- Padding
-- Background color
-These styles are picked at the beginning of generation and applied to a root div.
-
-## Page layout
-A page can be laid out either as a single large column or as a combination of boxes.
-Boxes can have their own styling, which can be consistent or not. 2-3 boxes per row.
+## Layout
+The layout is randomly generated using css flexbox styling attributes. A page has a sequence of rows, and each row is made up by a sequence of columns.
+Each column can have custom styling, which is different from the rest of the page, and will contain a block.
 
 ## Possible blocks in column
 - Form

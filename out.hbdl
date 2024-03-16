@@ -1,18 +1,44 @@
 <div class='main-cont'>
     <div class='h-cont'>
-        <div class='s-col c-col-49'>
-            PLACEHOLDER
+        <div class='c-col-49-f'>
+            <div class='text-block-82'>
+                <div>quidem repellendus voluptatem rerum assumenda quibusdam quos numquam ipsa blanditiis saepe in dolorum libero placeat natus iste architecto</div>
+            </div>
+            <div class='text-block-307'>
+                <button type='button' class='btn-307'>veniam</button>
+                <button type='button' class='btn-307'>omnis laboriosam vero</button>
+            </div>
+        </div>
+        <div class='n2-col'>
+            <div class='title-block'>
+                <div>mollitia veniam</div>
+            </div>
+            <div class='text-block-666'>
+                <div>omnis possimus dicta sit esse eos fugiat consequatur ab quos modi fuga autem sequi a magni eligendi ducimus officia inventore laudantium hic sunt eaque quidem maiores totam magnam</div>
+            </div>
         </div>
     </div>
     <div class='h-cont'>
-        <div class='n3-col'>
-            PLACEHOLDER
+        <div class='s-col'>
+            <div class='title-block'>
+                <div>dicta doloremque nostrum</div>
+            </div>
+            <div class='text-block-1121'>
+                <div>ea dolorum animi eveniet recusandae vel veritatis ipsum dignissimos esse sequi omnis minima ratione</div>
+            </div>
         </div>
-        <div class='n3-col'>
-            PLACEHOLDER
+    </div>
+    <div class='h-cont'>
+        <div class='c-col-1360-f c-col-1360'>
+            <div class='title-block'>
+                <div>excepturi consectetur itaque nostrum</div>
+            </div>
         </div>
-        <div class='n3-col'>
-            PLACEHOLDER
+        <div class='n2-col'>
+            <div class='text-block-1571'>
+                <button type='button' class='main-btn'>odio ab minus</button>
+                <button type='button' class='main-btn'>enim</button>
+            </div>
         </div>
     </div>
 </div>
