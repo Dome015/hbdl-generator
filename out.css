@@ -1,0 +1,25 @@
+.main-cont {
+    margin: 0;
+    padding: 0.5em;
+    color: Bisque;
+    background-color: Lime;
+}
+
+.h-cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.s-col {
+    flex: 1;
+}
+
+.c-col-49 {
+    padding: 0;
+    color: Azure;
+    background-color: Aqua;
+}
+
+.n3-col {
+    flex: 0.33;
+}
