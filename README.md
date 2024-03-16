@@ -1,4 +1,5 @@
-# Synthetic HTML dataset generator
+# hbdl-generator
+A synthetic image-to-html dataset generator.
 
 ## Main variables
 - **html**: HTML code
@@ -49,4 +50,3 @@ A form row has the following variables:
 - Are the labels bold?
 - How many fields?
   - If labels above, up to 4; otherwise, up to 3
-
