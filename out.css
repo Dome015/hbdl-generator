@@ -1,18 +1,18 @@
 .main-cont {
     margin: 0;
-    padding: 0.2em 2em;
-    color: FireBrick;
-    background-color: Turquoise;
+    padding: 0.5em 0.5em;
+    color: GhostWhite;
+    background-color: FireBrick;
 }
 
 .main-btn {
-    padding: 0.5em;
-    color: DarkKhaki;
+    padding: 1em;
+    color: MistyRose;
     font-size: medium, large;
     font-weight: normal, bold;
-    background-color: Azure;
+    background-color: Aquamarine;
     border-style: none;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .h-cont {
@@ -20,70 +20,121 @@
     flex-direction: row;
 }
 
-.c-col-49-f {
-    flex: 1;
+.n2-col {
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     text-align: justify;
 }
 
-.text-block-82 {
+.text-block-78 {
     font-size: medium;
     display: flex;
     justify-content: center;
-}
-
-.btn-307 {
-    padding: 0.5em;
-    color: MediumTurquoise;
-    font-size: medium, large;
-    font-weight: normal, bold;
-    background-color: LightSalmon;
-    border-style: none;
-    border-radius: 25px;
-}
-
-.n2-col {
-    flex: 0.5;
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-}
-
-.title-block {
-    font-weight: bold;
-    font-size: large;
-}
-
-.text-block-666 {
-    font-size: medium;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.s-col {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.text-block-1121 {
-    font-size: medium;
-    display: flex;
-    justify-content: space-around;
-}
-
-.c-col-1360-f {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.c-col-1360 {
     padding: 0.2em;
-    color: GhostWhite;
-    background-color: MediumSeaGreen;
-    justify-content: end;
-    align-items: end;
+}
+
+.tbl-557-cont {
+    padding: 0.5em;
+}
+
+.tbl-557 table, th, td {
+    border: 1px solid WhiteSmoke;
+}
+
+.tbl-557 {
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.tbl-557 th {
+    padding: 1em 0.25em;
+    text-align: center;
+    background-color: PaleTurquoise;
+    color: Pink;
+    font-weight: normal;
+}
+
+.tbl-557 tr {
+    padding: 1em 0.25em;
+    text-align: center;
+    background-color: LightCoral;
+    color: Wheat;
+}
+
+.tbl-3012-cont {
+    padding: 1em;
+}
+
+.tbl-3012 table, th, td {
+    border: 0 solid Tomato;
+}
+
+.tbl-3012 {
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.tbl-3012 th {
+    padding: 1em 0.5em;
+    text-align: center;
+    background-color: LawnGreen;
+    color: Orange;
+    font-weight: normal;
+}
+
+.tbl-3012 tr {
+    padding: 1em 0.25em;
+    text-align: left;
+    background-color: SeaGreen;
+    color: DimGray;
+}
+
+.tbl-5084-cont {
+    padding: 0.5em;
+}
+
+.tbl-5084 table, th, td {
+    border: 0 solid DarkViolet;
+}
+
+.tbl-5084 {
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.tbl-5084 th {
+    padding: 1em 0.25em;
+    text-align: center;
+    background-color: IndianRed;
+    color: MidnightBlue;
+    font-weight: normal;
+}
+
+.tbl-5084 tr {
+    padding: 1em 0.25em;
+    text-align: left;
+    background-color: DeepPink;
+    color: Grey;
+}
+
+.tbl-5609-text {
+    color: MediumPurple;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    padding: 1em 0.5em;
+}
+
+.tbl-5609-select {
+    color: LightCyan;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    padding: 0.5em 0.5em;
 }

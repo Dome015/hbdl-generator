@@ -1,43 +1,260 @@
 <div class='main-cont'>
     <div class='h-cont'>
-        <div class='c-col-49-f'>
-            <div class='text-block-82'>
-                <div>quidem repellendus voluptatem rerum assumenda quibusdam quos numquam ipsa blanditiis saepe in dolorum libero placeat natus iste architecto</div>
+        <div class='n2-col'>
+            <div class='text-block-78'>
+                <div>debitis omnis distinctio quos perferendis ducimus sit ipsum numquam minima beatae nemo culpa itaque voluptatibus voluptas voluptate dolore dolorem amet odio dignissimos laboriosam natus veniam doloremque</div>
             </div>
-            <div class='text-block-307'>
-                <button type='button' class='btn-307'>veniam</button>
-                <button type='button' class='btn-307'>omnis laboriosam vero</button>
+            <div class='text-block-368'>
+                <button type='button' class='main-btn'>provident voluptatum</button>
             </div>
         </div>
         <div class='n2-col'>
-            <div class='title-block'>
-                <div>mollitia veniam</div>
-            </div>
-            <div class='text-block-666'>
-                <div>omnis possimus dicta sit esse eos fugiat consequatur ab quos modi fuga autem sequi a magni eligendi ducimus officia inventore laudantium hic sunt eaque quidem maiores totam magnam</div>
+            <div class='tbl-557-cont'>
+                <table class='tbl-557'>
+                    <thead>
+                        <th>obcaecati incidunt</th>
+                        <th>eum</th>
+                        <th>hic magnam rem</th>
+                        <th>earum dignissimos</th>
+                        <th>mollitia nam dolor</th>
+                        <th>quo incidunt nisi</th>
+                        <th>voluptates</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>91</td>
+                            <td>30</td>
+                            <td>incidunt numquam</td>
+                            <td>50</td>
+                            <td>31</td>
+                            <td>aut</td>
+                            <td>81</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>64</td>
+                            <td>est dicta</td>
+                            <td>80</td>
+                            <td>72</td>
+                            <td>mollitia aliquam</td>
+                            <td>86</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>48</td>
+                            <td>temporibus dolorem</td>
+                            <td>6.2</td>
+                            <td>23</td>
+                            <td>mollitia</td>
+                            <td>53</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>15</td>
+                            <td>repellat</td>
+                            <td>16</td>
+                            <td>49</td>
+                            <td>porro dignissimos</td>
+                            <td>37</td>
+                        </tr>
+                        <tr>
+                            <td>88</td>
+                            <td>63</td>
+                            <td>consequuntur consectetur</td>
+                            <td>27</td>
+                            <td>13</td>
+                            <td>ea error</td>
+                            <td>73</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
     <div class='h-cont'>
-        <div class='s-col'>
-            <div class='title-block'>
-                <div>dicta doloremque nostrum</div>
-            </div>
-            <div class='text-block-1121'>
-                <div>ea dolorum animi eveniet recusandae vel veritatis ipsum dignissimos esse sequi omnis minima ratione</div>
-            </div>
-        </div>
-    </div>
-    <div class='h-cont'>
-        <div class='c-col-1360-f c-col-1360'>
-            <div class='title-block'>
-                <div>excepturi consectetur itaque nostrum</div>
+        <div class='n2-col'>
+            <div class='tbl-3012-cont'>
+                <table class='tbl-3012'>
+                    <thead>
+                        <th>consequatur</th>
+                        <th>incidunt officiis deserunt</th>
+                        <th>libero ea eaque</th>
+                        <th>nihil labore alias</th>
+                        <th>dolorum ut</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>dolorem</td>
+                            <td>perferendis minima</td>
+                            <td>85</td>
+                            <td>totam</td>
+                            <td>cum recusandae sint</td>
+                        </tr>
+                        <tr>
+                            <td>dolores saepe sapiente</td>
+                            <td>aliquid nesciunt unde</td>
+                            <td>8</td>
+                            <td>distinctio inventore deleniti</td>
+                            <td>officiis</td>
+                        </tr>
+                        <tr>
+                            <td>exercitationem vitae nobis</td>
+                            <td>fuga</td>
+                            <td>95</td>
+                            <td>minima</td>
+                            <td>illo quisquam</td>
+                        </tr>
+                        <tr>
+                            <td>hic earum deserunt</td>
+                            <td>asperiores possimus</td>
+                            <td>0</td>
+                            <td>nesciunt minima</td>
+                            <td>esse</td>
+                        </tr>
+                        <tr>
+                            <td>dolorum</td>
+                            <td>laboriosam ea veniam</td>
+                            <td>2</td>
+                            <td>non</td>
+                            <td>molestias quod delectus</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <div class='n2-col'>
-            <div class='text-block-1571'>
-                <button type='button' class='main-btn'>odio ab minus</button>
-                <button type='button' class='main-btn'>enim</button>
+            <div class='tbl-5084-cont'>
+                <table class='tbl-5084'>
+                    <thead>
+                        <th>dolorum</th>
+                        <th>at</th>
+                        <th>eveniet voluptate fugit</th>
+                        <th>commodi accusamus reiciendis</th>
+                        <th>voluptates velit laborum</th>
+                        <th>vitae accusamus</th>
+                        <th>ducimus adipisci illum</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input class='tbl-5609-text' type='text' placeholder='odit'>
+                            </td>
+                            <td>
+                                <select class='tbl-5609-select'>
+                                    <option value='odit dolores'>odit dolores</option>
+                                    <option value='ipsum rerum'>ipsum rerum</option>
+                                    <option value='id ea accusamus'>id ea accusamus</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class='tbl-5609-select'>
+                                    <option value='odit'>odit</option>
+                                    <option value='nobis'>nobis</option>
+                                    <option value='commodi'>commodi</option>
+                                </select>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <input class='tbl-5609-text' type='text' placeholder='repudiandae provident'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8.9</td>
+                            <td>sint perferendis optio</td>
+                            <td>45</td>
+                            <td>84</td>
+                            <td>22</td>
+                            <td>72</td>
+                            <td>impedit illum officia</td>
+                        </tr>
+                        <tr>
+                            <td>90</td>
+                            <td>explicabo</td>
+                            <td>35</td>
+                            <td>73</td>
+                            <td>66</td>
+                            <td>90</td>
+                            <td>accusantium sunt</td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td>aut reprehenderit maiores</td>
+                            <td>92</td>
+                            <td>36</td>
+                            <td>4.7</td>
+                            <td>92</td>
+                            <td>dolorem aliquam id</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>adipisci facilis minima</td>
+                            <td>80</td>
+                            <td>32</td>
+                            <td>56</td>
+                            <td>12</td>
+                            <td>in</td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td>ipsa dolorem iusto</td>
+                            <td>14</td>
+                            <td>79</td>
+                            <td>79</td>
+                            <td>67</td>
+                            <td>dolor debitis</td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>repellendus repudiandae</td>
+                            <td>12</td>
+                            <td>45</td>
+                            <td>63</td>
+                            <td>100</td>
+                            <td>reiciendis temporibus</td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>inventore aliquid sint</td>
+                            <td>34</td>
+                            <td>91</td>
+                            <td>18</td>
+                            <td>7</td>
+                            <td>excepturi</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>asperiores vero expedita</td>
+                            <td>97</td>
+                            <td>8.6</td>
+                            <td>31</td>
+                            <td>43</td>
+                            <td>assumenda neque</td>
+                        </tr>
+                        <tr>
+                            <td>1.9</td>
+                            <td>earum ipsum</td>
+                            <td>34</td>
+                            <td>61</td>
+                            <td>13</td>
+                            <td>7</td>
+                            <td>laudantium obcaecati porro</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>voluptate</td>
+                            <td>38</td>
+                            <td>44</td>
+                            <td>5.6</td>
+                            <td>24</td>
+                            <td>laboriosam alias itaque</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

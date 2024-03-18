@@ -30,7 +30,7 @@ def add_single_tag(code, left_pad, tag, attributes={}):
     for key in attributes:
         code += f" {key}='{attributes[key]}'"
     code += ">\n"
-    return (code, left_pad)
+    return (code)
 
 def close_tag(code, left_pad, tag):
     global open_tag_n
@@ -47,7 +47,7 @@ def add_content(code, left_pad, content):
     code += f"{content}\n"
     return code
 
-def open_close_tag(code, left_pad, tag, attributes=[], content=""):
+def open_close_tag(code, left_pad, tag, attributes={}, content=""):
     # Open tag
     for i in range (0, left_pad):
         code += " "
@@ -183,7 +183,7 @@ def generate_single_column(html, css, left_pad):
     # Open column
     html, left_pad = open_tag(html, left_pad, "div", { "class": classes })
     # Pick block
-    block = pick_random(["title-text-button"])
+    block = pick_random(["title-text-button", "table"])
     html, css, left_pad = generate_block(html, css, left_pad, block)
     # Close column
     html, left_pad = close_tag(html, left_pad, "div")
@@ -223,7 +223,7 @@ def generate_column(html, css, left_pad, num_cols):
     # Open column
     html, left_pad = open_tag(html, left_pad, "div", { "class": classes })
     # Pick block
-    block = pick_random(["title-text-button"])
+    block = pick_random(["title-text-button", "table"])
     html, css, left_pad = generate_block(html, css, left_pad, block)
     # Close column
     html, left_pad = close_tag(html, left_pad, "div")
@@ -236,7 +236,8 @@ def generate_block(html, css, left_pad, block):
         if (probability(0.5)):
             css["title-block"] = {
                 "font-weight": "bold",
-                "font-size": "large"
+                "font-size": "large",
+                "padding": f"{pick_random(config['padding'])}",
             }
             html, left_pad = open_tag(html, left_pad, "div", { "class": "title-block" })
             html = open_close_tag(html, left_pad, "div", content=lorem.words(random.randint(2, 5)))
@@ -246,14 +247,14 @@ def generate_block(html, css, left_pad, block):
             css[f"text-block-{len(html)}"] = {
                 "font-size": "medium",
                 "display": "flex",
-                "justify-content": pick_random(config["justify-content"])
+                "justify-content": pick_random(config["justify-content"]),
+                "padding": f"{pick_random(config['padding'])}",
             }
             html, left_pad = open_tag(html, left_pad, "div", { "class": f"text-block-{len(html)}" })
             html = open_close_tag(html, left_pad, "div", content=lorem.words(random.randint(10, 30)))
             html, left_pad = close_tag(html, left_pad, "div")
         # Button
-        if (probability(0.5)):
-            button_class = "main-btn"
+        if (probability(0.5)):            
             if (probability(0.1)):
                 css[f"btn-{len(html)}"] = {
                     "padding": css["main-btn"]["padding"],
@@ -265,10 +266,129 @@ def generate_block(html, css, left_pad, block):
                     "border-radius": css["main-btn"]["border-radius"],
                 }
                 button_class = f"btn-{len(html)}"
+            else:                
+                button_class = "main-btn"
             html, left_pad = open_tag(html, left_pad, "div", { "class": f"text-block-{len(html)}" })
             for i in range(0, random.randint(1, 3)):
                 html = open_close_tag(html, left_pad, "button", { "type": "button", "class": button_class }, lorem.words(random.randint(1, 3)))
             html, left_pad = close_tag(html, left_pad, "div")
+    elif block == "table":
+        # Table container styling
+        table_cont_class_name = f"tbl-{len(html)}-cont"
+        css[table_cont_class_name] = {
+            "padding": pick_random(config["padding"])
+        }
+        table_class_name = f"tbl-{len(html)}"
+        # Border styling
+        css[f"{table_class_name} table, th, td"] = {
+            "border": f'{pick_random(config["table-border"])} {pick_random(config["color"])}',         
+        }
+        # Width
+        css[table_class_name] = {
+            "width": "100%",
+            "border-radius": pick_random(config["border-radius"]),
+            "border-collapse": "collapse"
+        }
+        # Table headers styling
+        css[f"{table_class_name} th"] = {
+            "padding": f"{pick_random(config['table-padding-tb'])} {pick_random(config['table-padding-lr'])}",
+            "text-align": pick_random(config["table-text-align"]),
+            "background-color": pick_random(config["color"]),
+            "color": pick_random(config["color"]),
+            "font-weight": pick_random(config["font-weight"])
+        }
+        # Table row styling
+        css[f"{table_class_name} tr"] = {
+            "padding": f"{pick_random(config['table-padding-tb'])} {pick_random(config['table-padding-lr'])}",
+            "text-align": pick_random(config["table-text-align"]),
+            "background-color": pick_random(config["color"]),
+            "color": pick_random(config["color"])
+        }
+        # Even rows colored different
+        if probability(0.5):
+            css[f"{table_class_name} tr:nth-child(even)"] = {
+                "background-color": pick_random(config["color"])
+            }
+        # Fields with type
+        num_fields = random.randint(2, 8)
+        num_buttons = random.randint(0, 3)
+        fields = []
+        for i in range(0, num_fields):
+            fields.append({
+                "field_name": lorem.words(random.randint(1, 3)),
+                "field_type": pick_random(["text", "integer", "float"])
+            })
+        # Filters?
+        has_filters = probability(0.5)
+        if has_filters:
+            for field in fields:
+                if field["field_type"] in ["text", "integer"]:
+                    field["filter_type"] = pick_random(["text", "select", "none"])
+                elif field["field_type"] == "float":
+                    field["filter_type"] = pick_random(["text", "none"])
+        num_rows = pick_random([5, 10])
+        # Generate table
+        html, left_pad = open_tag(html, left_pad, "div", { "class": table_cont_class_name })
+        html, left_pad = open_tag(html, left_pad, "table", { "class": table_class_name })
+        html, left_pad = open_tag(html, left_pad, "thead")
+        for field in fields:
+            html = open_close_tag(html, left_pad, "th", content=field["field_name"])
+        html, left_pad = close_tag(html, left_pad, "thead")
+        html, left_pad = open_tag(html, left_pad, "tbody")
+        # Filters
+        if has_filters:
+            # Create styles
+            text_class_name = f"tbl-{len(html)}-text"
+            css[text_class_name] = {
+                "color": pick_random(config["color"]),
+                "border-radius": pick_random(config["border-radius"]),
+                "border-style": "solid",
+                "border-width": pick_random(config["border-width"]),
+                "padding": f"{pick_random(config['table-padding-tb'])} {pick_random(config['table-padding-lr'])}"
+            }
+            select_class_name = f"tbl-{len(html)}-select"
+            css[select_class_name] = {
+                "color": pick_random(config["color"]),
+                "border-radius": pick_random(config["border-radius"]),
+                "border-style": "solid",
+                "border-width": pick_random(config["border-width"]),
+                "padding": f"{pick_random(config['table-padding-tb'])} {pick_random(config['table-padding-lr'])}"
+            }
+            # Add filters row, if there is at least one
+            if len(list(filter(lambda f: f["filter_type"] != "none", fields))) > 0:
+                html, left_pad = open_tag(html, left_pad, "tr")
+                for field in fields:
+                    html, left_pad = open_tag(html, left_pad, "td")
+                    if field["filter_type"] == "text":
+                        html = add_single_tag(html, left_pad, "input", {
+                            "class": text_class_name,
+                            "type": "text",
+                            "placeholder": lorem.words(random.randint(0, 2))
+                        })
+                    elif field["filter_type"] == "select":
+                        html, left_pad = open_tag(html, left_pad, "select", { "class": select_class_name })
+                        for i in range(0, 3):
+                            option_value = lorem.words(random.randint(1, 3))
+                            html = open_close_tag(html, left_pad, "option", { "value": option_value }, option_value)
+                        html, left_pad = close_tag(html, left_pad, "select")
+                    html, left_pad = close_tag(html, left_pad, "td")
+                html, left_pad = close_tag(html, left_pad, "tr")
+        # Add data rows
+        for i in range(0, num_rows):
+            html, left_pad = open_tag(html, left_pad, "tr")
+            for field in fields:
+                content = ""
+                if (field["field_type"] == "text"):
+                    content = lorem.words(random.randint(1, 3))
+                elif (field["field_type"] == "integer"):
+                    content = str(random.randint(0, 100)) 
+                elif (field["field_type"] == "float"):
+                    content = '{0:.2g}'.format(random.random() * 100)
+                html = open_close_tag(html, left_pad, "td", content=content)
+            html, left_pad = close_tag(html, left_pad, "tr")
+        html, left_pad = close_tag(html, left_pad, "tbody")
+        html, left_pad = close_tag(html, left_pad, "table")
+        html, left_pad = close_tag(html, left_pad, "div")
     else:
         html = add_content(html, left_pad, block)
 

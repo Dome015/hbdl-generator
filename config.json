@@ -1,6 +1,6 @@
 {
     "indent": 4,
-    "num_rows": [2, 3, 4],
+    "num_rows": [1, 2, 3],
     "num_cols": [2],
     "justify-content": [
         "start",
@@ -208,8 +208,29 @@
         "thin"
     ],
     "border-radius": [
+        "0",
         "5px",
-        "10px",
-        "25px"
+        "10px"
+    ],
+    "table-border": [
+        "1px solid",
+        "2px solid",
+        "0 solid"
+    ],
+    "table-padding-tb": [
+        "0.5em",
+        "1em"
+    ],
+    "table-padding-lr": [
+        "0.25em",
+        "0.5em"
+    ],
+    "table-text-align": [
+        "left",
+        "center"
+    ],
+    "font-weight": [
+        "normal",
+        "bold"
     ]
 }
